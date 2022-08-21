@@ -1,0 +1,11 @@
+.mainBox {
+  margin: 60px 0 10% 10%;
+  width: 80%;
+  min-width: 800px;
+  min-height: calc(100vh - 60px);
+  background-color: #fff;
+  border-radius: 4px;
+}
+.layOut_out {
+  background-color: #f6f6f6;
+}

@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Layout from "../../layout/index"
 function index() {
   return (
-    <div>index</div>
+    <div>
+      <Layout></Layout>
+    </div>
   )
 }
 
