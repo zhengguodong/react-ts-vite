@@ -13,12 +13,12 @@ function Nav() {
     navigate(val as any);
   }
   useEffect(()=>{
-    const list=[{
+    const list:Array<typeList>=[{
         label:"首页",
-        // path:'/login'
+        path:'/login'
     },{
         label:"首页",
-        // path:'/login'
+        path:'/login'
     }]
     setRouteList(list);
   },[])
@@ -48,7 +48,9 @@ function Nav() {
         <Popover placement="bottom" content={content} trigger="click">
             <Avatar src="https://joeschmoe.io/api/v1/random" />
         </Popover>
-           
+          <span style={{"paddingLeft":"10px","color":"#fff"}}>
+            登山人
+          </span> 
         </div>
     </div>
   )

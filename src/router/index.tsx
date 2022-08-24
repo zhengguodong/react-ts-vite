@@ -1,7 +1,8 @@
-import {useRoutes,Navigate} from "react-router-dom"
+import {useRoutes,Navigate,} from "react-router-dom"
 import {RouteObject} from "./interface"
 import Login from "../pages/Login"
 import Home from "../pages/Home"
+import Main from "../pages/Main"
 //导入所有路由
 const metaRouters:any= import.meta.globEager("./modules/*.tsx");
 const routerArray:RouteObject[]=[]
@@ -21,7 +22,14 @@ export const rootRouter:RouteObject[]=[
     },
     {
         path: "/home",
-		element: <Home/>
+		element: <Home/>,
+        children:[ 
+            {
+            // 默认显示
+                index:true,
+                element: <Main/>
+            },
+        ]
     },
     ...routerArray,
     {

@@ -3,7 +3,51 @@
   width: 80%;
   min-width: 800px;
   min-height: calc(100vh - 60px);
+  background-color: #f6f6f6;
+  border-radius: 4px;
+  display: flex;
+}
+.mainBox .leftBox {
+  width: 220px;
+  height: 400px;
   background-color: #fff;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.mainBox .midBox {
+  width: calc(100% - 550px);
+  background-color: #fff;
+  border-radius: 4px;
+}
+.mainBox .rightBox {
+  margin-left: auto;
+  width: 300px;
+  height: 800px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.mainBox .rightBox .item_header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+.mainBox .rightBox .item_mid {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.mainBox .rightBox .item_bottom {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  margin-bottom: 10px;
   border-radius: 4px;
 }
 .layOut_out {
