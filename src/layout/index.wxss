@@ -6,18 +6,21 @@
   background-color: #f6f6f6;
   border-radius: 4px;
   display: flex;
+  position: relative;
 }
 .mainBox .leftBox {
   width: 220px;
   height: 400px;
   background-color: #fff;
-  margin-right: 10px;
   border-radius: 4px;
+  position: fixed;
+  z-index: 99;
 }
 .mainBox .midBox {
   width: calc(100% - 550px);
   background-color: #fff;
   border-radius: 4px;
+  min-width: 600px;
 }
 .mainBox .rightBox {
   margin-left: auto;
@@ -25,6 +28,8 @@
   height: 800px;
   border-radius: 4px;
   font-weight: 600;
+  position: fixed;
+  z-index: 99;
 }
 .mainBox .rightBox .item_header {
   width: 100%;
@@ -49,6 +54,8 @@
   background-color: #fff;
   margin-bottom: 10px;
   border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .layOut_out {
   background-color: #f6f6f6;

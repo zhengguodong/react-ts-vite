@@ -5,6 +5,7 @@
   display: flex;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 .outBox .item_1 {
   line-height: 50px;

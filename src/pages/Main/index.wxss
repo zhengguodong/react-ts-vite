@@ -1,0 +1,12 @@
+.outBox1 {
+  width: 100%;
+}
+.outBox1 .mainBox1 {
+  display: flex;
+}
+.outBox1 .mainBox1 .left_box1 {
+  width: 50%;
+}
+.outBox1 .mainBox1 .right_box1 {
+  width: 50%;
+}

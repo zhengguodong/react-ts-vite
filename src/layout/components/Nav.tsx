@@ -17,8 +17,20 @@ function Nav() {
         label:"首页",
         path:'/login'
     },{
-        label:"首页",
+        label:"文章",
         path:'/login'
+    },{
+      label:"成果",
+      path:'/login'
+    },{
+      label:"问题",
+      path:'/login'
+    },{
+      label:"作品",
+      path:'/login'
+    },{
+      label:"玩意",
+      path:'/login'
     }]
     setRouteList(list);
   },[])
@@ -35,11 +47,11 @@ function Nav() {
         <div className='item_1'>
             web3学习平台
         </div>
-        <div style={{"width":"400px"}}>
+        <div style={{"width":"600px","display":"flex","flexWrap":"nowrap"}}>
         {
             routeList.map((x,index)=>{
                 return (
-                    <span onClick={()=>{goPath(x.path)}} style={{"color":"#fff","lineHeight":"50px","marginLeft":"20px","whiteSpace":"nowrap"}} key={index}>{x.label}</span>
+                    <Button type="link" onClick={()=>{goPath(x.path)}} style={{"color":"#fff","lineHeight":"50px","marginLeft":"20px","position":"relative","top":"-5px"}} key={index}>{x.label}</Button>
                 )
             })
         }
