@@ -15,22 +15,22 @@ function Nav() {
   useEffect(()=>{
     const list:Array<typeList>=[{
         label:"首页",
-        path:'/login'
+        path:'/home'
     },{
         label:"文章",
-        path:'/login'
+        path:'/home/article'
     },{
       label:"成果",
-      path:'/login'
+      path:'/home/achievement'
     },{
       label:"问题",
-      path:'/login'
+      path:'/home/question'
     },{
       label:"作品",
-      path:'/login'
+      path:'/home/work'
     },{
       label:"玩意",
-      path:'/login'
+      path:'/home/thing'
     }]
     setRouteList(list);
   },[])

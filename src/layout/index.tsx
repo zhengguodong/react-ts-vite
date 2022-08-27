@@ -1,6 +1,6 @@
 import React from 'react'
 import  Nav from "./components/Nav"
-import {Outlet} from "react-router-dom"
+import {Outlet,useNavigate} from "react-router-dom"
 import "./index.less"
 import msg from "../assets/icons/msg.png"
 import study from "../assets/icons/study.svg"
@@ -20,13 +20,17 @@ import {Button} from "antd"
 import man from "../assets/icons/man.svg"
 import help from "../assets/icons/help.svg"
 function index() {
+  let navigate=useNavigate()
+  let push=()=>{
+    navigate("/articleUp")
+  }
   return (
     <div className='layOut_out'>
         <Nav></Nav>
         <div className="mainBox">
           <div style={{"width":"220px","height":"400px","marginRight":"10px"}}>
             <div className='leftBox'>
-                <img src={man} alt="" />
+                {/* <img src={man} alt="" /> */}
             </div>
           </div>
             <div className='midBox'>
@@ -56,7 +60,7 @@ function index() {
                   这是一个不断学习的过程<img src={study} alt="" style={{"width":"30px","objectFit":"cover","marginLeft":"30px"}}/>
                 </div>
                 <div>
-                  <Button type="primary" style={{"width":"90%","margin":"30px 0 10px 10px"}}>发布文章</Button>
+                  <Button type="primary" style={{"width":"90%","margin":"30px 0 10px 10px"}} onClick={()=>push()}>发布文章</Button>
                 </div>
                 <div>
                   <Button danger style={{"width":"90%","margin":"10px 0 10px 10px"}}>记录问题</Button>
