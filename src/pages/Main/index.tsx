@@ -63,9 +63,9 @@ const index:React.FC=()=>{
             <div className={main.left_box}>
               <span style={{"fontWeight":"600","fontSize":"16px"}}>文章列表</span><DoubleRightOutlined />
               {
-                articleList.map(x=>{
+                articleList.map((x,index)=>{
                   return(
-                    <div style={{"fontWeight":"400","margin":"10px","fontSize":"16px"}}>
+                    <div style={{"fontWeight":"400","margin":"10px","fontSize":"16px"}} key={index}>
                       {articleList[0].title}-----{articleList[0].url}
                     </div>
                   )
@@ -78,9 +78,9 @@ const index:React.FC=()=>{
             <div className={main.right_box}>
               <span style={{"fontWeight":"600","fontSize":"16px"}}>成果展示</span><DoubleRightOutlined />
               {
-                articleList.map(x=>{
+                articleList.map((x,index)=>{
                   return(
-                    <div style={{"fontWeight":"400","margin":"10px","fontSize":"16px"}}>
+                    <div style={{"fontWeight":"400","margin":"10px","fontSize":"16px"}} key={index}>
                       {articleList[0].title}-----{articleList[0].url}
                     </div>
                   )

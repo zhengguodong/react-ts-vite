@@ -24,6 +24,9 @@ function index() {
   let push=()=>{
     navigate("/articleUp")
   }
+  let push_2=()=>{
+    navigate("/questionUp")
+  }
   return (
     <div className='layOut_out'>
         <Nav></Nav>
@@ -63,7 +66,7 @@ function index() {
                   <Button type="primary" style={{"width":"90%","margin":"30px 0 10px 10px"}} onClick={()=>push()}>发布文章</Button>
                 </div>
                 <div>
-                  <Button danger style={{"width":"90%","margin":"10px 0 10px 10px"}}>记录问题</Button>
+                  <Button danger style={{"width":"90%","margin":"10px 0 10px 10px"}} onClick={()=>push_2()}>记录问题</Button>
                 </div>
               </div>
               <div className='item_bottom'>

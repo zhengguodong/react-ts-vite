@@ -9,6 +9,7 @@ import Achievement from "../pages/Achievement"
 import Work from "../pages/Work"
 import Thing from "../pages/Thing"
 import ArticleUp from "../pages/Article_up"
+import QuestionUp from "../pages/QuestionUp"
 //导入所有路由
 const metaRouters:any= import.meta.globEager("./modules/*.tsx");
 const routerArray:RouteObject[]=[]
@@ -29,6 +30,10 @@ export const rootRouter:RouteObject[]=[
     {
         path: "/articleUp",
 		element: <ArticleUp/>
+    },
+    {
+        path: "/questionUp",
+		element: <QuestionUp/>
     },
     {
         path: "/home",
